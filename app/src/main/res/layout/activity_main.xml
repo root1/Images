@@ -1,24 +1,50 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_margin="10dp"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
 
-
-    <Button
+    <LinearLayout android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Get Image"
-        android:id="@+id/get_image" />
+        android:layout_height="match_parent">
 
-    <ImageView
+
+        <Button
+            android:id="@+id/get_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Image" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thumbnail" />
+        <TextView
+        android:id="@+id/base_big"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/path" />
-</LinearLayout>
+        android:text="New Text" />
+        <TextView
+            android:id="@+id/base_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text" />
+    </LinearLayout>
+</ScrollView>
